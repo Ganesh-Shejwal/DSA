@@ -1,4 +1,4 @@
-package recursion;
+package com.Recursion;
 public class first_last_occurence {
    //T.C  O(n)
    //S.C. O(n)
