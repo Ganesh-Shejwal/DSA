@@ -1,4 +1,4 @@
-package recursion;
+package com.Recursion;
 //T.C. => O(logn)
 //S.C  => O(logn)
 class PowerOfNumber {
