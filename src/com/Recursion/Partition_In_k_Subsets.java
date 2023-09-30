@@ -1,7 +1,7 @@
 package com.Recursion;
 
 import java.util.ArrayList;
-// T.C. O(K*N)
+// T.C. O(2^K *N)
 // S.C. O(k)
 
 public class Partition_In_k_Subsets {
@@ -14,14 +14,17 @@ public class Partition_In_k_Subsets {
         }
         help(ar,0,k,1,ds);
     }
+
+    public static void display(ArrayList<ArrayList<Integer>> ds){
+        for(ArrayList<Integer> ls:ds){
+            System.out.print(ls+" ");
+        }
+        System.out.println();
+    }
+
     public static void help(int[] ar, int ind, int k,int csub, ArrayList<ArrayList<Integer>> ds){
         if(ind==ar.length){
-            if(csub>k){
-                for(ArrayList<Integer> ls:ds){
-                    System.out.print(ls+" ");
-                }
-                System.out.println();
-            }
+            if(csub>k) idisplay(ds);
             return;
         }
       for(int i=0;i<k;i++){
