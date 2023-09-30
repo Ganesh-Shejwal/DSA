@@ -24,7 +24,7 @@ public class Partition_In_k_Subsets {
 
     public static void help(int[] ar, int ind, int k,int csub, ArrayList<ArrayList<Integer>> ds){
         if(ind==ar.length){
-            if(csub>k) idisplay(ds);
+            if(csub>k) display(ds);
             return;
         }
       for(int i=0;i<k;i++){
