@@ -22,7 +22,7 @@ public class Palindromic_Partitioning_Of_String {
         return true;
     }
     public static void help(String str, String ds){
-        if(str.equals("")){
+        if(str.isEmpty()){
             System.out.println(ds);
         }
         for(int i=0;i<str.length();i++){
