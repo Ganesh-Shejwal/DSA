@@ -27,22 +27,22 @@ public class Partition_In_k_Subsets {
             if(csub>k) display(ds);
             return;
         }
-      for(int i=0;i<k;i++){
-          ArrayList<Integer> ls=ds.get(i);
-          if(ls.size()>0){
-              //If partition size is not zero then add ele. but not inc. count
-              ls.add(ar[ind]);
-              help(ar,ind+1,k,csub,ds);
-              ls.remove(ls.size()-1);
-          }
-          else{
-              //If partition size is zero then add ele. but inc. count and break loop to avoid repetitions
-              ls.add(ar[ind]);
-              help(ar,ind+1,k,csub+1,ds);
-              ls.remove(ls.size()-1);
-              break; //used to avoid partition
-          }
-      }
+        for(int i=0;i<k;i++){
+            ArrayList<Integer> ls=ds.get(i);
+            if(ls.size()>0){
+                //If partition size is not zero then add ele. but not inc. count
+                ls.add(ar[ind]);
+                help(ar,ind+1,k,csub,ds);
+                ls.remove(ls.size()-1);
+            }
+            else{
+                //If partition size is zero then add ele. but inc. count and break loop to avoid repetitions
+                ls.add(ar[ind]);
+                help(ar,ind+1,k,csub+1,ds);
+                ls.remove(ls.size()-1);
+                break; //used to avoid partition
+            }
+        }
 
     }
 }
