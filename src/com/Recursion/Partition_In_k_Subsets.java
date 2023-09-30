@@ -1,7 +1,7 @@
 package com.Recursion;
 
 import java.util.ArrayList;
-// T.C. O(K*N)
+// T.C. O(2^K*N)
 // S.C. O(k)
 
 public class Partition_In_k_Subsets {
