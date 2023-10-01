@@ -15,7 +15,7 @@ public class Remove_Invalid_Parentheses {
         help(str,count,new HashMap<>());
         System.out.println(res);
     }
-    //HashSet used to avoid dupliacate result
+    //HashSet used to avoid duplicate result
     static HashSet<String> res=new HashSet<>();
     public static int getMax(String str){
         Stack<Character> stk = new Stack<>();
