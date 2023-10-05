@@ -3,7 +3,8 @@ package com.Recursion.PermutationCombination;
 import java.util.Arrays;
 
 public class Permutation_Using_BackTracking_nPr {
-    // T.C. O(n!/(n-r)!
+    // Problem Statement : No of Ways to put non-identical(non-similar) r items into n boxes
+    // T.C. O(n!/(n-r)!)
     // S.C. O(n) => n = total items;
     public static void main(String[] args) {
         int current_item=1,total_items=2;
