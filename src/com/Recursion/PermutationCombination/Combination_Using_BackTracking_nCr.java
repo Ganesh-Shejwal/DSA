@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Combination_Using_BackTracking_nCr {
 
     // Problem Statement : No of Ways to put identical(similar) r items into n boxes
-    // T.C. O(n!/n! (n-r)!)
+    // T.C. O(n!/r! (n-r)!)
     // S.C. O(n) => n = size of items;
     public static void main(String[] args) {
         int citem=0,items=2;
